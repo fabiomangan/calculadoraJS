@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        function soma() {
+            let valor1 = document.getElementById("valor1").value;
+            let valor2 = document.getElementById("valor2").value;
+            let resultado = parseInt(valor1) + parseInt(valor2);
+
+            return alert(resultado);
+        };
+
+
+        function subtrair() {
+            let valor1 = document.getElementById("valor1").value;
+            let valor2 = document.getElementById("valor2").value;
+            let resultado = parseInt(valor1) - parseInt(valor2);
+
+            return alert(resultado);
+        };
+
+        function dividir() {
+            let valor1 = document.getElementById("valor1").value;
+            let valor2 = document.getElementById("valor2").value;
+            let resultado = parseInt(valor1) / parseInt(valor2);
+
+            return alert(resultado);
+        };
+
+
+        function multiplicar() {
+            let valor1 = document.getElementById("valor1").value;
+            let valor2 = document.getElementById("valor2").value;
+            let resultado = parseInt(valor1) * parseInt(valor2);
+
+            return alert(resultado);
+        };
+
+
+    </script>
+    <meta charset="UTF-8" />
+    <title>Calculadora</title>
+</head>
+<body>
+    <input type="text" name="valor1" id="valor1" value="" />
+    <input type="text" name="valor2" id="valor2" value="" />
+    <br />
+    <button onclick="soma();" type="button">+</button>
+    <button onclick="subtrair();" type="button">-</button>
+    <button onclick="dividir();" type="button">/</button>
+    <button onclick="multiplicar();" type="button">*</button>
+
+</body>
+</html>
